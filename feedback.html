@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM tutorial</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      ❤️Feed back
+      <a href="index.html" style="padding: 3px; color: green" id="hspan"
+        >Home</a
+      >
+    </header>
+    <main id="main">
+      <h2><span id="headername"></span> Feedback Form</h2>
+      <form name="feedback">
+        <div>
+          <div>
+            <input type="text" name="fname" placeholder="Enter Your Full Name" value="" id="fname" required/>
+          </div>
+          <div class="flex" id="input-container">
+            <div class="flex">
+              <input type="radio" name="type" id="gen-fdbk" value="gen-fdbk" checked />
+              <label for="gen-fdbk">General Feedback</label>
+            </div>
+            <div class="flex">
+              <input type="radio" name="type" id="tech-fdbk" value="tech-fdbk" />
+              <label for="tech-fdbk">Tech Feedback</label>
+            </div>
+            <div class="flex">
+              <input type="radio" name="type" id="Contribution" value="contribution" />
+              <label for="Contribution">Contribution</label>
+            </div>
+          </div>
+          <div class="flex">
+            <input type="email" name="email" placeholder="you@gmail.com" required>
+            <select name="country" id="country">
+              <option value="">--Select Country--</option>
+              <option value="IND">india</option>
+              <!-- <option value="IND" selected>india</option> -->
+              <option value="LK">Sri Lanka</option>
+              <option value="MSY">Malaysia</option>
+              <option value="THA">Thailand</option>
+            </select>
+          </div>
+          <div>
+            <textarea name="textarea" id="" rows="4" required>Enter your feedback</textarea>
+          </div>
+          <!-- <div>
+            <div>
+              <label for="checkbox">
+                <input type="checkbox" name="hobbies" id="hob1" value="hob1">hobbies1</label>
+            </div>
+            <div>
+              <label for="checkbox">
+                <input type="checkbox" name="hobbies" id="hob2" value="hob2">hobbies2</label>
+            </div>
+            <div>
+              <label for="checkbox">
+                <input type="checkbox" name="hobbies" id="hob3" value="hob3">hobbies3</label>
+            </div>
+          </div> -->
+          <div>
+            <label for="terms">
+              <input type="checkbox" id="terms" name="terms" required value="true"/>
+              I accept terms & conditions
+            </label>
+          </div>
+          <div>
+            <button>Submit</button>
+          </div>
+          <div>
+            <span id="response"></span>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
