@@ -4,7 +4,6 @@
 //     alert("Dom content will loaded")
 // })
 
-
 // const myApp = document.getElementById("myApp");
 // myApp.innerHTML = `<h1>H1 will changed</h1>`
 // console.log(myApp)
